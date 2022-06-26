@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.levelListController">
+   <children>
+      <ImageView fitHeight="602.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="250.0" layoutY="380.0" mnemonicParsing="false" onAction="#onBackPressed" style="-fx-background-color: gold;" text="回首頁">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button1" layoutX="63.0" layoutY="58.0" mnemonicParsing="false" onAction="#onOnePressed" text="第一關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button2" layoutX="256.0" layoutY="58.0" mnemonicParsing="false" onAction="#onTwoPressed" text="第二關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button3" layoutX="461.0" layoutY="58.0" mnemonicParsing="false" onAction="#onThreePressed" text="第三關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button4" layoutX="63.0" layoutY="148.0" mnemonicParsing="false" onAction="#onFourPressed" text="第四關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button5" layoutX="257.0" layoutY="148.0" mnemonicParsing="false" onAction="#onFivePressed" text="第五關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button6" layoutX="461.0" layoutY="148.0" mnemonicParsing="false" onAction="#onSixPressed" text="第六關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button7" layoutX="63.0" layoutY="241.0" mnemonicParsing="false" onAction="#onSevenPressed" text="第七關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button8" layoutX="257.0" layoutY="241.0" mnemonicParsing="false" onAction="#onEightPressed" text="第八關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button9" layoutX="461.0" layoutY="241.0" mnemonicParsing="false" onAction="#onNinePressed" text="第九關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button10" layoutX="63.0" layoutY="324.0" mnemonicParsing="false" onAction="#onTenPressed" text="第十關">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

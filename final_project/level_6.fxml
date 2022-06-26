@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="Background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#triggerStart" onMouseMoved="#barMove" prefHeight="480.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.level_6">
+   <children>
+      <Pane fx:id="BrickPane" prefHeight="480.0" prefWidth="600.0" />
+      <Label layoutX="10.0" layoutY="370.0" text="HP:" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="370.0" text="得分:" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="TotalScore" fill="LIME" layoutX="495.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Pane fx:id="Skill1" layoutX="230.0" layoutY="365.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: D0D0D0;" />
+      <Pane fx:id="Skill2" layoutX="270.0" layoutY="365.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: D0D0D0;" />
+      <Pane fx:id="Skill3" layoutX="310.0" layoutY="365.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: D0D0D0;" />
+      <Pane fx:id="Skill4" layoutX="350.0" layoutY="365.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: D0D0D0;" />
+      <Label layoutX="10.0" layoutY="420.0" text="Time Left:" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Text fx:id="Timer" fill="#59ff00" layoutX="80.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Line fx:id="Bar" layoutX="350.0" layoutY="350.0" startX="-150.0" stroke="#797878" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="7.0" />
+      <Button fx:id="Back" layoutX="525.0" layoutY="456.0" mnemonicParsing="false" onAction="#backToMenu" style="-fx-background-color: #FF2D2D;" text="Back" />
+      <Button fx:id="pause" layoutX="575.0" layoutY="456.0" mnemonicParsing="false" onAction="#pauseGame" style="-fx-background-color: #FF9D6F;" text="   " />
+      <Line fx:id="PauseLine1" layoutX="578.0" layoutY="470.0" rotate="90.0" startX="10.0" strokeWidth="4.0" />
+      <Line fx:id="PauseLine2" layoutX="587.0" layoutY="470.0" rotate="90.0" startX="10.0" strokeWidth="4.0" />
+      <Polygon fx:id="PlayTriangle" layoutX="588.0" layoutY="479.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="90.0" scaleX="0.15" scaleY="0.15" scaleZ="0.15" stroke="BLACK" strokeType="INSIDE" visible="false" />
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CEFFCE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.menu">
+   <children>
+      <Button layoutX="96.0" layoutY="273.0" mnemonicParsing="false" onAction="#onStartPressed" style="-fx-background-color: gold;" text="選擇關卡">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="398.0" layoutY="273.0" mnemonicParsing="false" onAction="#onExitPressed" style="-fx-background-color: gold;" text="結束">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="174.0" layoutY="94.0" text="打磚塊" textFill="#39c4ce">
+         <font>
+            <Font name="System Bold" size="84.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="74.0" layoutX="505.0" layoutY="132.0" onMouseClicked="#onRulePressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@book.png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="521.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="玩法">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
